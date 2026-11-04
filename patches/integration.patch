@@ -1,0 +1,236 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+index 0f75d81..1398c41 100644
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -9,0 +10,12 @@
++### Added
++- Complete-outcome frozen-pool evaluation with separate labels and explicit cost scope.
++- Reproducible per-target refold selection with hash sampling, score ranking, diversity preference, manifests and checksum-verified replay.
++- Chain-aware interface metric parsing with ambiguity checks and explicit pairwise aggregation.
++- Privacy filtering for final parameter metadata.
++
++### Fixed
++- Keep Boltz complex and monomer cuEquivariance compiler caches in writable task directories.
++- Accept native AF2IG filtered score identifiers and reject conflicting identifier columns.
++- Request Boltz PAE output explicitly for downstream interface scoring.
++- Preserve zero DataLoader workers in BoltzGen wrappers and reject invalid worker counts.
++
+@@ -174 +186 @@
+-  design and partial diffusion pipelines.
+\ No newline at end of file
++  design and partial diffusion pipelines.
+diff --git a/README.md b/README.md
+index 3578d6a..b7a06c3 100644
+--- a/README.md
++++ b/README.md
+@@ -122,0 +123,4 @@
++
++## Reproducible refold selection
++
++The rfd and rfd_partial workflows support explicit budget selection, audit manifests and replay. See [the guide](docs/docs/extra/refold-selection.md).
+diff --git a/bin/parse_boltz_confidence.py b/bin/parse_boltz_confidence.py
+index c0b5eef..47e56b1 100755
+--- a/bin/parse_boltz_confidence.py
++++ b/bin/parse_boltz_confidence.py
+@@ -22,0 +23,2 @@
++from interface_scores import read_interface_metrics
++
+@@ -31,0 +34,4 @@
++    parser.add_argument("--binder-chains", nargs="+")
++    parser.add_argument("--target-chains", nargs="+")
++    parser.add_argument("--require-interface", action="store_true")
++
+@@ -44,31 +50,7 @@
+-            # Read IPSAE TSV
+-            df_ipsae = pd.read_csv(args.merge_ipsae, sep="\t")
+-            
+-            # Filter for Type == 'min'
+-            if "Type" in df_ipsae.columns:
+-                row_min = df_ipsae[df_ipsae["Type"] == "min"]
+-                
+-                if not row_min.empty:
+-                    # Take the first match (should be unique for Type=min)
+-                    row_to_merge = row_min.iloc[[0]].copy()
+-                    
+-                    # Identify columns to exclude
+-                    cols_to_exclude = {"Chn1", "Chn2", "PAE", "Dist", "nres1", "nres2", 
+-                                       "dist1", "dist2", "Type", "Model"}
+-                    cols_to_drop = [c for c in row_to_merge.columns 
+-                                    if c in cols_to_exclude or c.startswith("d0") or c.startswith("n0")]
+-                    
+-                    row_to_merge.drop(columns=cols_to_drop, inplace=True, errors="ignore")
+-                    
+-                    # Rename ipSAE to ipSAE_min
+-                    if "ipSAE" in row_to_merge.columns:
+-                        row_to_merge.rename(columns={"ipSAE": "ipSAE_min"}, inplace=True)
+-                    
+-                    # Merge with df_flat
+-                    df_flat = pd.concat([df_flat.reset_index(drop=True), 
+-                                         row_to_merge.reset_index(drop=True)], axis=1)
+-                else:
+-                    print(f"Warning: No row with Type='min' found in {args.merge_ipsae}", file=sys.stderr)
+-            else:
+-                print(f"Warning: 'Type' column not found in {args.merge_ipsae}", file=sys.stderr)
+-                
++            metrics = read_interface_metrics(
++                args.merge_ipsae, args.binder_chains, args.target_chains,
++                allow_missing=not (args.require_interface or args.binder_chains),
++            )
++            if metrics:
++                metrics["ipSAE_min"] = metrics.pop("ipSAE", None)
++                df_flat = pd.concat([df_flat.reset_index(drop=True), pd.DataFrame([metrics])], axis=1)
+diff --git a/main.nf b/main.nf
+index efa16a7..1cfd7fa 100644
+--- a/main.nf
++++ b/main.nf
+@@ -57,0 +58,11 @@
++    if (!(params.refold_selection in ['first', 'hash', 'score', 'diverse'])) {
++        error 'refold_selection must be first, hash, score or diverse'
++    }
++    if ((params.refold_selection != 'first' || params.selection_manifest) &&
++        !(params.method in ['rfd', 'rfd_partial'])) {
++        error 'Candidate selection is supported for rfd and rfd_partial'
++    }
++    if (params.selection_manifest && params.refold_selection == 'first') {
++        error 'selection_manifest requires hash, score or diverse selection'
++    }
++
+@@ -128,0 +140,3 @@
++        if (params.privacy_mode) {
++            params_json = refold.PrivacyMetadata.clean(params_json)
++        }
+diff --git a/modules/local/boltzgen/boltzgen_affinity.nf b/modules/local/boltzgen/boltzgen_affinity.nf
+index b9cc508..fe9dbf6 100644
+--- a/modules/local/boltzgen/boltzgen_affinity.nf
++++ b/modules/local/boltzgen/boltzgen_affinity.nf
+@@ -0,0 +1,2 @@
++include { workerArguments } from './worker_args'
++
+@@ -24 +26 @@
+-    def num_workers_arg = num_workers ? "--num_workers ${num_workers}" : ""
++    def num_workers_arg = workerArguments(num_workers)
+diff --git a/modules/local/boltzgen/boltzgen_design.nf b/modules/local/boltzgen/boltzgen_design.nf
+index d0399d2..e81533b 100644
+--- a/modules/local/boltzgen/boltzgen_design.nf
++++ b/modules/local/boltzgen/boltzgen_design.nf
+@@ -0,0 +1,2 @@
++include { workerArguments } from './worker_args'
++
+@@ -25 +27 @@
+-    def num_workers_arg = num_workers ? "--num_workers ${num_workers}" : ""
++    def num_workers_arg = workerArguments(num_workers)
+diff --git a/modules/local/boltzgen/boltzgen_design_folding.nf b/modules/local/boltzgen/boltzgen_design_folding.nf
+index e24e6f8..4806ceb 100644
+--- a/modules/local/boltzgen/boltzgen_design_folding.nf
++++ b/modules/local/boltzgen/boltzgen_design_folding.nf
+@@ -0,0 +1,2 @@
++include { workerArguments } from './worker_args'
++
+@@ -25 +27 @@
+-    def num_workers_arg = num_workers ? "--num_workers ${num_workers}" : ""
++    def num_workers_arg = workerArguments(num_workers)
+diff --git a/modules/local/boltzgen/boltzgen_folding.nf b/modules/local/boltzgen/boltzgen_folding.nf
+index 05748b6..06a936d 100644
+--- a/modules/local/boltzgen/boltzgen_folding.nf
++++ b/modules/local/boltzgen/boltzgen_folding.nf
+@@ -0,0 +1,2 @@
++include { workerArguments } from './worker_args'
++
+@@ -25 +27 @@
+-    def num_workers_arg = num_workers ? "--num_workers ${num_workers}" : ""
++    def num_workers_arg = workerArguments(num_workers)
+diff --git a/modules/local/boltzgen/boltzgen_inverse_folding.nf b/modules/local/boltzgen/boltzgen_inverse_folding.nf
+index 7a561f9..6d0eca9 100644
+--- a/modules/local/boltzgen/boltzgen_inverse_folding.nf
++++ b/modules/local/boltzgen/boltzgen_inverse_folding.nf
+@@ -0,0 +1,2 @@
++include { workerArguments } from './worker_args'
++
+@@ -27 +29 @@
+-    def num_workers_arg = num_workers ? "--num_workers ${num_workers}" : ""
++    def num_workers_arg = workerArguments(num_workers)
+diff --git a/modules/local/common/boltz_compare_binder_monomer.nf b/modules/local/common/boltz_compare_binder_monomer.nf
+index ff48dca..56995c6 100644
+--- a/modules/local/common/boltz_compare_binder_monomer.nf
++++ b/modules/local/common/boltz_compare_binder_monomer.nf
+@@ -49,0 +50,2 @@
++    export CUEQ_TRITON_CACHE_DIR="\$(pwd)/.cuequivariance_triton_cache"
++    mkdir -p "\$CUEQ_TRITON_CACHE_DIR"
+diff --git a/modules/local/common/boltz_compare_complex.nf b/modules/local/common/boltz_compare_complex.nf
+index e8d1303..01fb02c 100644
+--- a/modules/local/common/boltz_compare_complex.nf
++++ b/modules/local/common/boltz_compare_complex.nf
+@@ -91,0 +92,2 @@
++    export CUEQ_TRITON_CACHE_DIR="\$(pwd)/.cuequivariance_triton_cache"
++    mkdir -p "\$CUEQ_TRITON_CACHE_DIR"
+@@ -114,0 +117 @@
++        --write_full_pae \\
+diff --git a/nextflow.config b/nextflow.config
+index c867937..0fdd546 100644
+--- a/nextflow.config
++++ b/nextflow.config
+@@ -21,0 +22,5 @@
++    refold_selection = 'first'
++    selection_seed = 0
++    selection_manifest = false
++    selection_diversity_threshold = 0.8
++    privacy_mode = true
+@@ -71,0 +77,6 @@
++    withName: SELECT_REFOLD_CANDIDATES {
++        executor = 'local'
++        cpus = 1
++        memory = '1 GB'
++    }
++
+diff --git a/subworkflows/local/boltz_refold_scoring_rfd.nf b/subworkflows/local/boltz_refold_scoring_rfd.nf
+index ab3b123..b60a731 100644
+--- a/subworkflows/local/boltz_refold_scoring_rfd.nf
++++ b/subworkflows/local/boltz_refold_scoring_rfd.nf
+@@ -21,0 +22 @@
++include { SELECT_REFOLD_CANDIDATES } from '../../modules/local/common/select_refold_candidates'
+@@ -57 +58,19 @@
+-        ch_filtered_with_meta = AF2IG_SCORE_FILTER.out.accepted
++        ch_filtered_pdbs = AF2IG_SCORE_FILTER.out.accepted.flatten()
++        if (params.refold_selection != 'first') {
++            SELECT_REFOLD_CANDIDATES(
++                ch_filtered_pdbs.toList(),
++                AF2IG_SCORE_FILTER.out.scores.toList(),
++                binder_chain,
++                target_chain,
++                params.refold_selection,
++                refold_max,
++                params.selection_seed,
++                params.selection_diversity_threshold,
++                file(params.selection_manifest ?: "${projectDir}/assets/dummy_files/empty"),
++            )
++            ch_refold_pdbs = SELECT_REFOLD_CANDIDATES.out.selected.flatten()
++        }
++        else {
++            ch_refold_pdbs = ch_filtered_pdbs
++        }
++        ch_filtered_with_meta = ch_refold_pdbs
+@@ -66 +85 @@
+-            refold_max,
++            params.refold_selection == 'first' ? refold_max : false,
+diff --git a/workflows/boltz_pulldown.nf b/workflows/boltz_pulldown.nf
+index fd6fd1c..e73a27c 100644
+--- a/workflows/boltz_pulldown.nf
++++ b/workflows/boltz_pulldown.nf
+@@ -118 +118,2 @@
+-        --merge-ipsae "${ipsae_tsv}"
++        --merge-ipsae "${ipsae_tsv}" \\
++        --binder-chains B --target-chains A --require-interface
+diff --git a/workflows/rfd.nf b/workflows/rfd.nf
+index d17bd0e..11a7260 100644
+--- a/workflows/rfd.nf
++++ b/workflows/rfd.nf
+@@ -126 +126 @@
+-                --refold_max          Maximum number of designs to refold with Boltz-2 [default: disabled]
++                --refold_max          Maximum number of designs to refold (per target for explicit selection) [default: disabled]
+diff --git a/workflows/rfd_partial.nf b/workflows/rfd_partial.nf
+index b12ffb4..0cad413 100644
+--- a/workflows/rfd_partial.nf
++++ b/workflows/rfd_partial.nf
+@@ -151 +151 @@
+-            --refold_max          Maximum number of designs to refold with Boltz-2 [default: disabled]
++            --refold_max          Maximum number of designs to refold (per target for explicit selection) [default: disabled]

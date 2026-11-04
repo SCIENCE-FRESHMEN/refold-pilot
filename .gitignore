@@ -1,0 +1,45 @@
+# Regenerable caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.nextflow/
+.nextflow.log*
+work/
+
+# Machine-specific state and credentials
+.env
+.env.*
+!.env.example
+*.private.*
+.DS_Store
+Thumbs.db
+
+
+# Generated experiment output and private execution state
+/results/
+/example-output/
+/scripts/runs/
+/runtime/
+/runs/
+/logs/
+/export/
+/export-archive/
+/cache/
+/containers/
+/tmp/
+*.private.*
+*.sif
+*.simg
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.log
+*.html
+*.pem
+*.key
+id_rsa*
+id_ed25519*

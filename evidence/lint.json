@@ -1,0 +1,10 @@
+{
+  "targeted_files": 8,
+  "targeted_errors": 0,
+  "existing_projectDir_warnings": true,
+  "whole_repository_clean": false,
+  "diff_whitespace_check": "passed",
+  "boltz_cache_fix_modules_linted": 2,
+  "boltz_cache_fix_errors": 0,
+  "existing_baseDir_warnings": true
+}

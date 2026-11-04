@@ -1,0 +1,7 @@
+Optional scoring-only port for the separate development checkout.
+Base revision: fa856c87fb298d8969c6e170d2280e73f9e35ea9
+Copy bin/interface_scores.py into that clean checkout, then check/apply
+develop-scoring.patch with git apply --unidiff-zero.
+Do not apply the stable integration patch to this development revision.
+The generic fold parser fails safely on ambiguous multi-chain tables; full
+multi-chain orchestration and union-interface ipSAE are outside this port.

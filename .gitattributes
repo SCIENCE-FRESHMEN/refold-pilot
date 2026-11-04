@@ -1,0 +1,12 @@
+# Preserve audited artifact bytes even when Git autocrlf is enabled.
+* -text
+# Scripts and documentation are authored with LF line endings.
+*.sh text eol=lf
+*.py text eol=lf
+*.nf text eol=lf
+*.groovy text eol=lf
+*.config text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

@@ -1,0 +1,24 @@
+{
+  "server_new_python_tests_passed": 28,
+  "local_operations_checks_passed": 23,
+  "local_standalone_python_tests_passed": 30,
+  "local_operations_checks": {
+    "export": 5,
+    "cleanup": 2,
+    "resume_guard": 2,
+    "scheduler_adapter": 7,
+    "archive_import": 4,
+    "environment_root": 3
+  },
+  "python_version": "3.12.14",
+  "nextflow_version": "24.04.3",
+  "containers_verified": 6,
+  "weight_preflight": "passed",
+  "complex_pae_requested_explicitly": true,
+  "boltz_task_local_cueq_cache_preflight": "passed",
+  "boltz_cache_preflight_included_gpu_inference": false,
+  "boltz_complex_gpu_completed": 42,
+  "boltz_monomer_gpu_completed": 42,
+  "gpu_assignment_forwarded_to_container": true,
+  "full_gpu_reference_complete": true
+}

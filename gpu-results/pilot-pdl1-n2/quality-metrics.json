@@ -1,0 +1,16 @@
+[
+  {
+    "stable_id": "3197d5f52c9bb67cf18ecc868299c1412bc99c394d8b0a9b6cf58817cfd80440",
+    "ipsae_min": 0.038791344267445065,
+    "target_aligned_binder_rmsd_all": 35.82,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "8dab4960e47ab44d8881c9249bf4baaab42a2a9938404adfad352f66f61b794d",
+    "ipsae_min": 0.5065461406269698,
+    "target_aligned_binder_rmsd_all": 32.42,
+    "quality_pass": 0,
+    "reason": "computed"
+  }
+]

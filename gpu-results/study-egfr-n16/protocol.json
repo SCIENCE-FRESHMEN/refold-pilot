@@ -1,0 +1,26 @@
+{
+  "label_kind": "computational_proxy",
+  "ipsae_minimum": 0.6,
+  "rmsd_field": "rmsd_all",
+  "target_aligned_binder_rmsd_maximum_angstrom": 2.0,
+  "fixed_target_chain": "B",
+  "fixed_binder_chain": "A",
+  "mobile_target_chain": "B",
+  "mobile_binder_chain": "A",
+  "budgets": [
+    2,
+    4,
+    8
+  ],
+  "selection_seeds": [
+    0,
+    7,
+    42
+  ],
+  "similarity_threshold": 0.8,
+  "missing_or_failed_outcome": "quality_pass_0_with_reason",
+  "future_label_policy": "not_available_to_selectors",
+  "cost_scope": "recorded_refold_task_wall_time_not_pure_gpu_kernel_time",
+  "generation_reproducibility": "not_claimed; frozen-pool selection only",
+  "experimental_binding_validation": false
+}

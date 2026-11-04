@@ -1,0 +1,29 @@
+{
+  "data_kind": "real_reference_pool",
+  "trials": 48,
+  "consistent_trials": 48,
+  "checksum_replay": "passed",
+  "results": [
+    {
+      "policy": "hash",
+      "budget": 4,
+      "permutations": 16,
+      "consistent": 16,
+      "mean_loaded_manifest_selection_seconds": 2.4048902560025454e-05
+    },
+    {
+      "policy": "score",
+      "budget": 4,
+      "permutations": 16,
+      "consistent": 16,
+      "mean_loaded_manifest_selection_seconds": 7.605325663462281e-06
+    },
+    {
+      "policy": "diverse",
+      "budget": 4,
+      "permutations": 16,
+      "consistent": 16,
+      "mean_loaded_manifest_selection_seconds": 0.007520375191234052
+    }
+  ]
+}

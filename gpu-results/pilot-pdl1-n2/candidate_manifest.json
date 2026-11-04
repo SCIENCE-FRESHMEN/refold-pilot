@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "stable_id": "3197d5f52c9bb67cf18ecc868299c1412bc99c394d8b0a9b6cf58817cfd80440",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "KEKAAKLLEEAVAETGKLTKEIAKILREAGAPSSTIAAVQSELGEASAKLTKAAQAVKKGNVEEAVKLAEEALKHAEKALELAKAASPEAAPYAQKAVDAAKEALKAAKKL",
+      "file_sha256": "eb92944438c18f3d9fd100bdc0b848b3df38dff57fe66921b0d8a1a7c073661d",
+      "plddt_binder": 94.135,
+      "pae_interaction": 26.426,
+      "candidate": "candidate_3197d5f52c9bb67c.pdb"
+    },
+    {
+      "stable_id": "8dab4960e47ab44d8881c9249bf4baaab42a2a9938404adfad352f66f61b794d",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "DAAAAAAAAAAAAAAAAADAAAAAAAAVAAMKEAGKNLAAALKAGDDEAAKYYAAANAAYAAARKAYQTIAAGAAAAAAAAAAAAAAAAAAAGAAAKAAGDAAAAAAKA",
+      "file_sha256": "ce3b804c02923cb74586407bd676c99b97c56e97da256dc0d4fa88ec8c3e5379",
+      "plddt_binder": 68.519,
+      "pae_interaction": 25.093,
+      "candidate": "candidate_8dab4960e47ab44d.pdb"
+    }
+  ],
+  "rejected": [],
+  "input_count": 2
+}

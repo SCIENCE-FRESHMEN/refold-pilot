@@ -1,0 +1,657 @@
+{
+  "data_kind": "synthetic; no inference or biological labels",
+  "groups": 81,
+  "selection_runs": 8100,
+  "consistent_runs": 8100,
+  "elapsed_seconds": 3.098,
+  "results": [
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 2,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 4,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 8,
+      "budget": 8,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 2,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 4,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 32,
+      "budget": 8,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 2,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 4,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 0,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 0,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 0,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 7,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 7,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 7,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 42,
+      "policy": "hash",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 42,
+      "policy": "score",
+      "permutations": 100,
+      "consistent_permutations": 100
+    },
+    {
+      "pool_size": 128,
+      "budget": 8,
+      "seed": 42,
+      "policy": "diverse",
+      "permutations": 100,
+      "consistent_permutations": 100
+    }
+  ]
+}

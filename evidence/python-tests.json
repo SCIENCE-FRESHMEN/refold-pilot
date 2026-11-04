@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "tests": 51,
+  "standalone_new_tests": 30,
+  "coverage": [
+    "selection",
+    "chain_interface_metrics",
+    "frozen_pool_evaluation",
+    "existing_relevant_regressions"
+  ],
+  "cases_by_file": {
+    "test_refold_selection": 25,
+    "test_refold_evaluation": 5,
+    "test_ipsae": 6,
+    "test_parse_boltz_confidence": 4,
+    "test_fold_scores": 11
+  },
+  "native_af2ig_filtered_score_schema_regression": "passed"
+}

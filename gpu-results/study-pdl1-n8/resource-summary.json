@@ -1,0 +1,100 @@
+{
+  "stages": {
+    "UNIQUE_ID": {
+      "completed_tasks": 1,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 0.279,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 5443584.0
+    },
+    "RFDIFFUSION": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 355.47100000000006,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 2038509568.0
+    },
+    "DL_BINDER_DESIGN_PROTEINMPNN": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 840.0949999999999,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 1699966976.0
+    },
+    "AF2_INITIAL_GUESS": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 939.4209999999999,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 4993552384.0
+    },
+    "AF2IG_SCORE_FILTER": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 31.421,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 168898560.0
+    },
+    "SELECT_REFOLD_CANDIDATES": {
+      "completed_tasks": 1,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 0.585,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 11096064.0
+    },
+    "BOLTZ_COMPARE_COMPLEX": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 592.782,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 24084668416.0
+    },
+    "BINDCRAFT_SCORING_BOLTZ_COMPLEX": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 359.725,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 1078321152.0
+    },
+    "BOLTZ_COMPARE_BINDER_MONOMER": {
+      "completed_tasks": 8,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 565.147,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 24015831040.0
+    },
+    "COMBINE_SCORES": {
+      "completed_tasks": 1,
+      "cached_tasks": 0,
+      "failed_tasks": 0,
+      "known_task_script_seconds": 11.319,
+      "missing_durations": 0,
+      "peak_host_rss_bytes": 113909760.0
+    }
+  },
+  "actual_gpu_models_seen": [
+    "L40S"
+  ],
+  "gpu_model_observation_scope": "RFdiffusion stdout only; other stages may use different compatible GPUs",
+  "gpu_model_coverage_complete": false,
+  "compatible_gpu_classes": [
+    "A100-80G",
+    "A40",
+    "L40S"
+  ],
+  "gpu_peak_memory_measured": false,
+  "raw_trace_exported": false,
+  "elapsed_definition": "Task-script wall time from raw Nextflow realtime in milliseconds; not GPU kernel time",
+  "includes_model_setup_cost": false,
+  "comparison_costs_are_subsets_of_reference_trace": true,
+  "end_to_end_speedup_measured": false
+}

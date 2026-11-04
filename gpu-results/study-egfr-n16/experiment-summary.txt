@@ -1,0 +1,19 @@
+Single-GPU reference study and frozen-pool evaluation
+
+Unique candidates: 16; proxy positives: 0; missing outcomes: 0.
+Proxy: ipSAE >= 0.6 and target-aligned binder RMSD_all <= 2 angstrom. No experimental binding validation.
+
+policy	budget	selected_count_range	proxy_positive_count_range	recorded_selected_refold_seconds_range
+hash	2	2–2	0–0	188.071–296.186
+hash	4	4–4	0–0	430.845–538.673
+hash	8	8–8	0–0	898.494–1070.978
+score	2	2–2	0–0	192.889–192.889
+score	4	4–4	0–0	464.410–464.410
+score	8	8–8	0–0	990.902–990.902
+diverse	2	2–2	0–0	192.889–192.889
+diverse	4	4–4	0–0	464.410–464.410
+diverse	8	8–8	0–0	990.902–990.902
+
+All policies use the same frozen pool; labels enter independent evaluation only.
+Repeated score/diverse seeds are not independent samples; small pools do not establish general quality improvement.
+Durations are selected-task records from the full reference run; budget policies were not independently run and end-to-end speedup was not measured.

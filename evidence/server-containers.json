@@ -1,0 +1,38 @@
+[
+  {
+    "name": "rfd",
+    "file": "containers/rfd.sif",
+    "bytes": 13797699584,
+    "sha256": "fb281717a4056ee5a6ff24ef96df79071aa225093ca4d8727ae7808b980a8b30"
+  },
+  {
+    "name": "mpnn",
+    "file": "containers/mpnn.sif",
+    "bytes": 10200707072,
+    "sha256": "ed29f9f076b18997e49acd9e1b4af65b7b336b5ed5b7e892bbadbccdc0bd4f92"
+  },
+  {
+    "name": "af2",
+    "file": "containers/af2.sif",
+    "bytes": 17132322816,
+    "sha256": "fd0e8bd1da1bbe295c475d79eba4aef502e6edf0f2a16eb9409aadd249cd2edf"
+  },
+  {
+    "name": "boltz",
+    "file": "containers/boltz.sif",
+    "bytes": 9227284480,
+    "sha256": "1ed8aa435e75f65677fafe8fd56e218e8271264cdea1805664a99ed4c5631b6e"
+  },
+  {
+    "name": "scoring",
+    "file": "containers/scoring.sif",
+    "bytes": 17227341824,
+    "sha256": "7345a0ce61f51eb707c5b27eb527f8f08c43434c43a3dac1ffed351e10085d74"
+  },
+  {
+    "name": "utils",
+    "file": "containers/utils.sif",
+    "bytes": 1277644800,
+    "sha256": "451442f6451e56af156727a28475a34ad142410caaeaca77171678297358d22d"
+  }
+]

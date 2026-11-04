@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "git_staging_with_windows_autocrlf": "All release files included; staged bytes identical",
+  "generated_output_and_private_file_ignore_rules": "passed",
+  "local_markdown_links": "passed",
+  "retained_scientific_and_patch_files_unchanged": 105,
+  "scope": "Packaging and file integrity; runtime verification is recorded separately in release-verification.json"
+}

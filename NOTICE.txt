@@ -1,0 +1,6 @@
+This bundle contains newly authored extensions and minimal integration diffs,
+not the upstream repository. Obtain that repository separately. Applying a
+patch does not replace or remove the upstream licence or copyright notices;
+retain them when distributing a combined source tree. No affiliation,
+employment, endorsement or biological validation is implied.
+The new extension files are made available under the MIT terms in LICENSE.

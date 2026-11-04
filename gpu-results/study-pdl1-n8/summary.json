@@ -1,0 +1,13 @@
+{
+  "status": "reference_complete",
+  "requested_designs": 8,
+  "valid_unique_reference_candidates": 8,
+  "source_manifest_input_count": 8,
+  "proxy_positive_count": 0,
+  "missing_reference_outputs": 0,
+  "label_kind": "computational_proxy",
+  "experimental_binding_validation": false,
+  "selection_seed_repeats_are_not_independent_targets": true,
+  "selector_source_sha256": "a90bfdfa1c43565699971ded9d408abcbd5edf2df14ad1ef2379ff736cfe9bd4",
+  "protocol_sha256": "292a32cc6faeb1a3f9ca03cdb8d45285afb59058d0adadb585cff17c4698b212"
+}

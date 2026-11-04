@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Current publication directory; CPU verification on an isolated copy, without rerunning GPU models or Nextflow",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "win32"
+  },
+  "standalone_python_tests_passed": 30,
+  "synthetic_order_checks_passed": 8100,
+  "readme_python_examples": "passed",
+  "real_structural_identities_and_file_checksums": 42,
+  "real_reference_comparison_rows_reproduced": 108,
+  "checksum_replays_verified": 4,
+  "reference_target_sequences": 2,
+  "protocol_hashes": "matched",
+  "selector_source_provenance": {
+    "published_sha256": "70b6865fd29043beaf06d8f5fa47c093afd373afa9a8779ffc542dcbc80e7758",
+    "historical_run_sha256": "a90bfdfa1c43565699971ded9d408abcbd5edf2df14ad1ef2379ff736cfe9bd4",
+    "relationship": "Historical source uses CRLF; published source uses LF. Re-encoding published LF as CRLF reproduces the historical hash exactly.",
+    "historical_run_records_modified": false
+  },
+  "english_report_and_archive_export": "passed",
+  "all_public_json_files_parse": true,
+  "local_markdown_links": "passed",
+  "shell_scripts_lf": true,
+  "gpu_models_rerun_for_publication": false,
+  "nextflow_rerun_for_publication": false
+}

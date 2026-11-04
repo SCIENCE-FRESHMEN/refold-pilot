@@ -1,0 +1,12 @@
+[
+  "bin/select_refold_candidates.py",
+  "bin/interface_scores.py",
+  "bin/evaluate_refold_selection.py",
+  "modules/local/common/select_refold_candidates.nf",
+  "modules/local/boltzgen/worker_args.nf",
+  "lib/refold/PrivacyMetadata.groovy",
+  "tests/bin/test_refold_selection.py",
+  "tests/bin/test_refold_evaluation.py",
+  "tests/cpu_selection.nf",
+  "docs/docs/extra/refold-selection.md"
+]

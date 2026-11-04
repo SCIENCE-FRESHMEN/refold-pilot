@@ -1,0 +1,114 @@
+[
+  {
+    "stable_id": "075d4a9fdb7a20908d97f9356152c68a7afd6941b28e725e3573adfffa29273c",
+    "ipsae_min": 0.3591577918015807,
+    "target_aligned_binder_rmsd_all": 3.8,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "0e7bc1cbbbb6e2c156c35e1dc3d09a55f18392179d6eae8bc897ff7aa8b19da1",
+    "ipsae_min": 0.054315712113298456,
+    "target_aligned_binder_rmsd_all": 40.42,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "17388466a9f2ba3ee71f591e131ce120e9f98e332eeb73b5e762cdaa24395463",
+    "ipsae_min": 0.034821956527804544,
+    "target_aligned_binder_rmsd_all": 24.54,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "1e419503eb8548b5200f63acb22dde0a69925c5e027f94ac1644526c40917ac8",
+    "ipsae_min": 0.013318696213598009,
+    "target_aligned_binder_rmsd_all": 11.51,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "25aef72d7e29b28eb4c48073c2bae6d45aba4187517fb46f2cdf0178fe87d1cf",
+    "ipsae_min": 0.012166400511544035,
+    "target_aligned_binder_rmsd_all": 19.72,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "382d79e9e2d3bbb01047f546ecc6f2bdeffd951a2d232eb754298d3b7c662d39",
+    "ipsae_min": 0.5450663283760702,
+    "target_aligned_binder_rmsd_all": 5.77,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "38ae379304e7aaf2a1e430f97c96f0be7b306f20eaa0f0ab5301cf766c7b5bc7",
+    "ipsae_min": 0.0,
+    "target_aligned_binder_rmsd_all": 27.04,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "3a6c43b7452a4c56af3d13e7674a8e599c8f8e4a054869d13944e1e1b7e3d951",
+    "ipsae_min": 0.0,
+    "target_aligned_binder_rmsd_all": 21.25,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "46bf1321564c822ced447d7eff6012ab84e7a7e37f6eb35bc4536bb68cd32914",
+    "ipsae_min": 0.012775110590459021,
+    "target_aligned_binder_rmsd_all": 35.02,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "82d1873ec43c8c5eae4e2033fb5240ae52c1dbb8453f337e4adca97e032d851d",
+    "ipsae_min": 0.013751768620803661,
+    "target_aligned_binder_rmsd_all": 37.05,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "9d32cb61d5650aac882ddf676626950ab2f1f3b5e4f80c79b6ca9125228f19ef",
+    "ipsae_min": 0.259937636201261,
+    "target_aligned_binder_rmsd_all": 27.69,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "a3275c0243ba23abcf8a1974f41687162e02ce146a00d0d72b926aa8cc4f21a5",
+    "ipsae_min": 0.015411178180413787,
+    "target_aligned_binder_rmsd_all": 32.73,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "b0788430d599a45a18d6d334bdf4374134fde8b0f39247ce8442cd3229965210",
+    "ipsae_min": 0.13132782761291914,
+    "target_aligned_binder_rmsd_all": 53.86,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "b4684a99ac38ab66aaa8576f27c4b1d148c8584544553afe5b93d24423ca7a5f",
+    "ipsae_min": 0.0,
+    "target_aligned_binder_rmsd_all": 42.77,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "c5899184cb42943d0a295ae31e8d4d2f8dca6110611f58ed7a9eca184659a94d",
+    "ipsae_min": 0.0,
+    "target_aligned_binder_rmsd_all": 15.48,
+    "quality_pass": 0,
+    "reason": "computed"
+  },
+  {
+    "stable_id": "ccab88f8098e5cd68dd61b64f309be5883b961e19744cbbc796edc5ff3b16b2f",
+    "ipsae_min": 0.013066503710575161,
+    "target_aligned_binder_rmsd_all": 16.35,
+    "quality_pass": 0,
+    "reason": "computed"
+  }
+]

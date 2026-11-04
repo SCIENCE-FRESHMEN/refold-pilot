@@ -1,0 +1,54 @@
+[
+  {
+    "case": "hash",
+    "passed": true,
+    "selected_count": 2
+  },
+  {
+    "case": "score",
+    "passed": true,
+    "selected_count": 2
+  },
+  {
+    "case": "diverse",
+    "passed": true,
+    "selected_count": 2
+  },
+  {
+    "case": "zero",
+    "passed": true,
+    "selected_count": 0
+  },
+  {
+    "case": "empty",
+    "passed": true,
+    "selected_count": 0
+  },
+  {
+    "case": "replay",
+    "passed": true,
+    "selected_count": 2
+  },
+  {
+    "case": "rfd_workflow_preview",
+    "passed": true
+  },
+  {
+    "case": "negative_workers",
+    "passed": true
+  },
+  {
+    "case": "negative_budget",
+    "passed": true
+  },
+  {
+    "case": "privacy_paths_and_account_fields",
+    "passed": true,
+    "selected_count": 2
+  },
+  {
+    "case": "native_filtered_af2_score_schema",
+    "passed": true,
+    "selected_count": 2
+  }
+]

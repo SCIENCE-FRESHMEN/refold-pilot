@@ -1,0 +1,150 @@
+{
+  "candidates": [
+    {
+      "stable_id": "02d4b141403d480f8df53563f89159f9bfa12093dcf8a62a07b5436a8036de7d",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "GSSSLAAVQAGVDTRLSKITAAAAAAVAAAAADPALAAAAAAAAAAAVAAAKADGAALLAKAQEAL",
+      "file_sha256": "ac3493fb79f2a41a220e61c552a3335e9416804c37b013641f07d0fc7817471f",
+      "plddt_binder": 79.883,
+      "pae_interaction": 27.522,
+      "candidate": "candidate_02d4b141403d480f.pdb"
+    },
+    {
+      "stable_id": "1b59adcb7b8d3c80f20827b82f35cc6d79252771efc87b6f509e47957b1a1325",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "GKEEAAKKAKELLEKAKEHLEKAKELAEKLKKADVETAEKLLEKAKEHAKKAFKYAAQAMVEADKADEEDQKELKEKAKEILEKAAKTLKEAEEALKEKKKKAA",
+      "file_sha256": "5d89242d2bf9244dfe70bc8cc57dce96d75b1b7b1586ec4cb11f2bae429fd4fd",
+      "plddt_binder": 91.417,
+      "pae_interaction": 10.367,
+      "candidate": "candidate_1b59adcb7b8d3c80.pdb"
+    },
+    {
+      "stable_id": "2b5d190fafc9347d4b21824d1a74fce5b31704f93efcfc76ddd56220c7dd628f",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "NPALAEAEKKIKEAGELSKKTKELTAEAEKLAAEGGDPKKVEELKAQAEKAQAAAAKATKEAAKLIAEAEK",
+      "file_sha256": "3bda5a4809e03d70c4c77434423d2501c15662799e1e022708438fea4776568f",
+      "plddt_binder": 85.163,
+      "pae_interaction": 17.091,
+      "candidate": "candidate_2b5d190fafc9347d.pdb"
+    },
+    {
+      "stable_id": "502db3a5b317dbec58acf890693df6484600e46aa56e560dbd09cdaac4fd0532",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "AEEEKEKKRKEALEEAKKLAAELKAVEAKIAALEANASALSPAAKAAVAAAKAAAAQAKDNIEAALKMAEISVGGAEAAVKAAKLALDAAKAAIAAAEAAAAA",
+      "file_sha256": "42d46917cc809f82331805a5794b01df95ce8b93849bea52a9675faa83b631fa",
+      "plddt_binder": 85.237,
+      "pae_interaction": 12.967,
+      "candidate": "candidate_502db3a5b317dbec.pdb"
+    },
+    {
+      "stable_id": "5b73c286f25ec0b6a425e24a00a8d55694b09746c0ae7fb52d2819011761c723",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "AAAALAAAAAQAAAVEATATAKAAEAAAKLAAKEKLSPETAEQYRVAYMAYLSAASAAAAAKAAAAGDPATALTTANALLAKAEKDYAAGDEYFAKAKALEAAEAAA",
+      "file_sha256": "90c7cea2b2e25058f4091590251648d3a9833c5f4b1e40572cc9d8e9dbd2f6a4",
+      "plddt_binder": 61.603,
+      "pae_interaction": 26.969,
+      "candidate": "candidate_5b73c286f25ec0b6.pdb"
+    },
+    {
+      "stable_id": "6cc0546573535535f21c41f9282b91926d3aed51977cbf7a4dc95f74531cfee8",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "AAAAAAAAAAAAALAAAAATAAALDAAAASAEEAAKKAKEAGSENAAKLLQKNAEALRAAGAAARAAAAAAAAALTA",
+      "file_sha256": "94c3860ac9da1bc609ec282726ea72767624c900768535ecf9b579157b054847",
+      "plddt_binder": 82.37,
+      "pae_interaction": 27.0,
+      "candidate": "candidate_6cc0546573535535.pdb"
+    },
+    {
+      "stable_id": "6cd73f1212a0ce224e0989b2f697458f22670cb2ca6fb312ad71409b33f23307",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "EEKKKEEEIKKEIAKLKEEAEEAKKKAEEYEAKAKEAEAKAAEYAADPSLAAEAKKAAATAQAYKFQAESAKKAAEKAEEKAKALEE",
+      "file_sha256": "4c403402fd5ae6a938934305d4a81d5300858e43cd1d56077f9d2daac7085921",
+      "plddt_binder": 87.514,
+      "pae_interaction": 17.287,
+      "candidate": "candidate_6cd73f1212a0ce22.pdb"
+    },
+    {
+      "stable_id": "70cf620833bcfaa61ecabd281be1509d1d4a44247138e74e1d422069a9f182f1",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "SDEEKAKELIERAKKAAKEAVASGKKEAAKRAAAEIADAAAKSFELSPEERKRVAEKLKELAKELAKADPEAAKTAESAAKVLE",
+      "file_sha256": "1c9b234dec9b91e066f719580bf32c42a259e76dab4eea84f744cff7f4e40261",
+      "plddt_binder": 91.717,
+      "pae_interaction": 27.293,
+      "candidate": "candidate_70cf620833bcfaa6.pdb"
+    },
+    {
+      "stable_id": "9aae488275fb211035ac447f9001699d0687a7c95406c6143f5ce4989b47bae6",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "EEEEKKKEEIEELLKKARELLEKAINLALKALEIAAKKSPEAAALVEAAIKKLSNAANYLAKGPEEAPKAYKDAKAAVENLKAAQKLAGPSKELEEAIKAAKEAAEALKKAVKLI",
+      "file_sha256": "f8fda7e86931cf0e6659a4bda3cebf9768f9d46600e685bf5e5bc9e24bda593c",
+      "plddt_binder": 93.403,
+      "pae_interaction": 26.883,
+      "candidate": "candidate_9aae488275fb2110.pdb"
+    },
+    {
+      "stable_id": "a3395dca63806be805d394a2daaa0cecc3deb185e51bdabc0d4c8612d554d487",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "SLEDLKDLERLKEVEALSEASRARAAALEALRAAGAADPALAAALEAAAAAARAAARAAAEKAREAALAAAAAAAAAAAAAAEAEEARREAELR",
+      "file_sha256": "45561dbf288180998d5588078dde8db826aabd5a781625b7bc215f1bac1e4bdb",
+      "plddt_binder": 73.716,
+      "pae_interaction": 23.291,
+      "candidate": "candidate_a3395dca63806be8.pdb"
+    },
+    {
+      "stable_id": "ab21712d5fb12534fb1e530cc229bfdf986aec0e2feb47091ac1d7bd31d94ac7",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "MAAAVAAAVAVGALTAVGVALATTPAVGVAVGVVVTALAILGLTVGAVGNATIRALTALAAAAAAAGAAAAAAGDAAAAAGHYAAAALLDAAAVLLGKAVGQSQAAKARA",
+      "file_sha256": "c990efa90f7e226bb54c1bfc2057565989f2cbfc2715151b34449fc4b6f3eaa1",
+      "plddt_binder": 53.542,
+      "pae_interaction": 27.681,
+      "candidate": "candidate_ab21712d5fb12534.pdb"
+    },
+    {
+      "stable_id": "ae76d28c05569ba41d24aea1bd8607c3cebe09a576650ab7ba7b07b97618b345",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "SEAKLKEVAEQGKASQIASDAAEKAAEWYRKNPDAPEEEIKAKIEEEAAKVPTPKHAEAAKKRAEALIKELEKERKEEEKKKEEEEKKKLEELK",
+      "file_sha256": "3b219aace1b792679537a74756b4471d9dde4a7dd29278a59d62b97691655681",
+      "plddt_binder": 87.107,
+      "pae_interaction": 12.239,
+      "candidate": "candidate_ae76d28c05569ba4.pdb"
+    },
+    {
+      "stable_id": "b7ace5a7cd64c4f75cc2e4b1deb2bf39cceb81a2460f69009e03ee7a5c531d77",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "AEEAEARRAELAAAYEATAAQAEATRAEAQKAIDEALKLAEKDPSFKNFAEALRRNLDTVTAELTAAAAAAAAAGDYEAALATAQQLLRAQQALLTSAKDLLAIIKEE",
+      "file_sha256": "63402c7fb0606db09e35ee803262965b2b90246a10d6aa1608eb30920f60c0e3",
+      "plddt_binder": 93.883,
+      "pae_interaction": 6.058,
+      "candidate": "candidate_b7ace5a7cd64c4f7.pdb"
+    },
+    {
+      "stable_id": "c7cd0903169037ab212d232ff1dc19574d8ba6951fa1b6aebc6e95aa68c16cfa",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "ATAEKIKELKEKAEEYKKKAEELKKKAEAAREAEKALIAQVKAADPALAKAAIEAGAKIVKDPAAAAEADKLPPELAALAKAIAAARKALAEATKKRNEYLKKAEEYEAEAKALEA",
+      "file_sha256": "a94d6f6bb867e64289bb7830db73d325b975af6f3eaf9fc781e6c2c1c5138787",
+      "plddt_binder": 87.912,
+      "pae_interaction": 26.261,
+      "candidate": "candidate_c7cd0903169037ab.pdb"
+    },
+    {
+      "stable_id": "c83549ff7cfb4c6f65bdd421b0ecc2c42a5c9c13990553b0e49ed295ca4d8ef4",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "GEEELEEEEEEEERARLDEIYARAAAALVTAGVKAGTAAEALAQAEQIAAASANPERVRAAAEAALAAATAAAAAAAA",
+      "file_sha256": "da538bacea9c0d8f9fb3f30bf5a2b426db21a954379fd0f7e82977c7fc196745",
+      "plddt_binder": 87.056,
+      "pae_interaction": 8.375,
+      "candidate": "candidate_c83549ff7cfb4c6f.pdb"
+    },
+    {
+      "stable_id": "d64b03bd61450ec6f54e5d82706dfac17353acd94335561aa743fe0dfb85ca4d",
+      "target_id": "12865450700de4df50aeaf6c5dc00c0051d55ad833d8c62e91a64354c838cfe1",
+      "binder_sequence": "ASADLAAAARAAEDAAAVADRLAAQYAAQAAATAALAAQDPAYAPQAAALQAKADALQANADALRAFAAKAKAAI",
+      "file_sha256": "e8943dec1245eb9f8a6be6551367fe6f36a3ae919ef708fba6254659bb6903e1",
+      "plddt_binder": 88.575,
+      "pae_interaction": 14.254,
+      "candidate": "candidate_d64b03bd61450ec6.pdb"
+    }
+  ],
+  "rejected": [],
+  "input_count": 16
+}
